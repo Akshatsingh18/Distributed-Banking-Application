@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-app
+  labels:
+    app: bank-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bank-app
+  template:
+    metadata:
+      labels:
+        app: bank-app
+    spec:
+      containers:
+        - name: bank-container
+          image: bank-app:1.0   # IMPORTANT: Do NOT use localhost/...
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bank-app-service
+spec:
+  type: NodePort
+  selector:
+    app: bank-app
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30080

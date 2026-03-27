@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1e2a38;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00d4ff;
+}
+
+.name {
+    color: white;
+    margin-right: auto;
+    margin-left: 20px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right logout section */
+.right {
+    margin-left: auto;
+}
+
+.right form button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Log links at bottom */
+.log {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.log a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.log a:hover {
+    text-decoration: underline;
+}
+
+/* Balance and error display */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}

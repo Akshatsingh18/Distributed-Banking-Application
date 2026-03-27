@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+    padding-top: 50px; /* Add some space from the top */
+}
+
+/* Page Heading styles */
+h1.page-heading {
+    color: #333;
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the heading bold */
+}
+
+/* Form container styles */
+form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Heading styles inside the form */
+form h1 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left inside the form */
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
